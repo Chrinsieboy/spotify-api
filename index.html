@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Spotify Profile</title>
+  <script src="src/script.ts" type="module"></script>
+</head>
+
+<body>
+  <h1>Display your Spotify profile data</h1>
+  <section id="profile">
+    <h2>Logged in as <span id="displayName"></span></h2>
+    <span id="avatar"></span>
+    <ul>
+      <li>User ID: <span id="id"></span></li>
+      <li>Email: <span id="email"></span></li>
+      <li>Spotify URI: <a id="uri" href="#"></a></li>
+      <li>Link: <a id="url" href="#"></a></li>
+      <li>Profile Image: <span id="imgUrl"></span></li>
+    </ul>
+  </section>
+
+  <section id="top-tracks">
+    <!-- For each top track, get the title, album and artist -->
+    <h2>Top Tracks</h2>
+    <ol id="tracks">
+      <li>
+        <h3><span id="track-1-title"></span></h3>
+        <p>Album: <span id="track-1-album"></span></p>
+        <p>Artist: <span id="track-1-artist"></span></p>
+      </li>
+      <li>
+        <h3><span id="track-2-title"></span></h3>
+        <p>Album: <span id="track-2-album"></span></p>
+        <p>Artist: <span id="track-2-artist"></span></p>
+      </li>
+      <li>
+        <h3><span id="track-3-title"></span></h3>
+        <p>Album: <span id="track-3-album"></span></p>
+        <p>Artist: <span id="track-3-artist"></span></p>
+      </li>
+    </ol>
+  </section>
+
+</body>
+
+</html>
+<!-- Note- We're referring directly to the TypeScript file, 
+ and we're using the `type="module"` attribute. 
+ Vite will transpile our TypeScript to JavaScript 
+ so that it can run in the browser. -->
