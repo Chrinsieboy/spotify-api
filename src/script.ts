@@ -1,9 +1,5 @@
-// Import dotenv
-import dotenv from "dotenv";
-dotenv.config({ path: '../.env' });
-
 // Get client id from the environment variables
-const clientId = process.env.CLIENT_ID || "ENTER_CLIENT_ID";
+const clientId = "ENTER_CLIENT_ID" || process.env.CLIENT_ID;
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
